@@ -1,5 +1,47 @@
 .App {
   text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient( black,blue);
+}
+button{
+  background-color: black;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 7px;
+}
+h2{
+  font-size: 68px;
+  color: rgb(43, 43, 255);
+}
+.default{
+  font-size: 50px;
+
+}
+
+.first ,.second{
+  margin: 15px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+.container{
+  width: 600px;
+  height: 500px;
+  border: 1px dotted white
+}
+
+
+.edited{
+  font-size: 40px;
+  color: blue;
 }
 
 .App-logo {
