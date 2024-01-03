@@ -1,5 +1,6 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+// @ts-ignore
 import { AppDispatch, RootStateType } from '../state/store'
 import { decrement, increment, incrementByAmount, DecrementByAmount,incrementAsync } from '../state/counter/CounterSlice';
 function Counter() {
@@ -13,6 +14,7 @@ function Counter() {
     <h2>{count}</h2>
 
     <div className='first'>
+      {/* incrementing and decrementing by 1 */}
       <button className='edited' onClick={()=>dispatch(increment())}>Increment</button>
       <button className='edited' onClick={()=>dispatch(decrement())}>Decrement</button>
     </div>
